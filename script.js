@@ -59,10 +59,12 @@ const showCategoryNews = (allNews) => {
   
   newsContainer.innerHTML = '';
   allNews.forEach(news => {
-    newsContainer.innerHTML += `<div class="border border-gray-500 p-4 rounded-lg shadow-lg mb-4 relative h-80">
-      <img class="w-full h-40 bg-cover rounded-xl" src="${news.image.srcset[4].url}" alt="Image">
-      <h1 class="mt-6 font-semibold">${news.title}</h1>
-      <p class=" text-sm text-gray-400 absolute bottom-3 ">${news.time}</p>
+    newsContainer.innerHTML += `<div class=" shadow-lg mb-4 relative w-auto h-auto sm:h-80 flex sm:flex-col">
+      <img class="w-40 sm:w-auto h-28 sm:h-40 bg-cover" src="${news.image.srcset[4].url}" alt="Image">
+      <div>
+        <h1 class="sm:mt-6 font-semibold px-3">${news.title}</h1>
+        <p class=" mt-3 sm:mt-0 text-sm text-gray-400 sm:absolute bottom-3 px-3">${news.time}</p>
+      </div>
      </div>`
   })
 }

@@ -11,24 +11,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
-  
+
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-  <header class="border-b-1 border-gray-300">
-    <div class="bg-[#b80000] p-7">
-      <div class="w-[1200px] mx-auto">
+<body class="">
+  <header class="bg-[#b80000] py-7">
+    <div class="max-w-[1200px] mx-auto px-4 xl:px-0">
         <picture>
           <img class="invert" src="./assets/logo.svg" alt="">
         </picture>
-      </div>
-    </div>
-    <div id="category-list" class="w-[1200px] mx-auto">
-      <!-- Category buttons will be dynamically inserted here -->
     </div>
   </header>
-  <section id="news-container" class="w-[1200px] mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+  <nav class="border-b-1 border-gray-300">
+    <div id="category-list" class="max-w-[1200px] mx-auto flex space-x-5 overflow-x-auto px-4 xl:px-0">
+      <!-- Category buttons will be dynamically inserted here -->
+    </div>
+  </nav>
+  <section id="news-container" class="max-w-[1200px] mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-4 xl:px-0">
     <!-- News articles will be dynamically inserted here -->
   </section>
 
